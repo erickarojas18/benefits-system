@@ -4,6 +4,7 @@
   "description": "Sistema de membresías y beneficios - Proyecto 1 Unit Tests",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest --coverage",
     "test:verbose": "jest --verbose --coverage"
   },
@@ -13,6 +14,11 @@
   "jest": {
     "testEnvironment": "node",
     "coverageDirectory": "coverage",
-    "collectCoverageFrom": ["src/**/*.js"]
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "inquirer": "^8.2.7"
   }
 }
